@@ -1,5 +1,5 @@
 """Quality gate for every finished reel — run it before sending a video to Arturo.
-Usage: .venv/bin/python qa.py <video.mp4> [--cuts 2.35,5.03,…] [--voz voz_sin_efectos.wav] [--expect texto.txt] [--no-movil]
+Usage: motor/.venv/bin/python motor/qa.py <video.mp4> [--cuts 2.35,5.03,…] [--voz voz_sin_efectos.wav] [--expect texto.txt] [--no-movil]
 From code: qa.check(mp4, cuts=[…], expect="…")  (hybrid.run(cfg, "qa") and promo scripts pass their cut times).
 
 Checks (each line prints OK or AVISO):

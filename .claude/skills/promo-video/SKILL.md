@@ -9,7 +9,7 @@ Reel vertical de ~35-45 s (1080×1920, **60 fps** como su grabación): **su cara
 huecos y, mientras habla, planos que **enseñan lo que dice** (capturas de la plataforma o motion graphics). Referencia
 viva: `promos/ciencia-datos/promo.py` (promo de Ciencia de Datos, aprobada) y su reel de referencia
 `https://www.instagram.com/p/DcjaNyWM5yO/`. Para una promo nueva copia `promos/ciencia-datos/promo.py` a `promos/<id>/promo.py` y
-adapta las secciones marcadas; el motor común está en `motor/` (Python: `motor/.venv/bin/python`).
+adapta las secciones marcadas; el código común está en `motor/` y `entrevistas/hybrid.py` (Python: `motor/.venv/bin/python`).
 
 ## Pasos
 
@@ -20,7 +20,7 @@ adapta las secciones marcadas; el motor común está en `motor/` (Python: `motor
 - El guion (lo que dice) y el objetivo (qué profesión, qué CTA).
 
 ### 2. Tomas
-`motor/prep.py <id> <vídeo>` y elige la **última toma buena** de cada frase (suele repetir mucho: en la de Ciencia de
+`motor/prep.py <id> <vídeo> promos/<id>` y elige la **última toma buena** de cada frase (suele repetir mucho: en la de Ciencia de
 Datos el Discord tenía 8 tomas). `SEGS` en segundos del original con `"vs"/"ve"` para cortar en valle. Comprueba que
 ningún corte se coma el final de una palabra (`qa` lo detecta, ver paso 6).
 

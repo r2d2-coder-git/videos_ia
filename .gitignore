@@ -20,8 +20,9 @@ node_modules/
 __pycache__/
 # Material privado: brutos, transcripciones, capturas con sesión, vídeos, renders
 entrevistas/brutos/
+entrevistas/datos/
+entrevistas/previews/
 archivo/
-motor/previews/
 promos/*/originales/
 promos/*/shots/
 **/out/

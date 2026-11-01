@@ -1,7 +1,7 @@
 """Generic r2d2.coder interview-exercise editor: surgical cuts + hybrid (Swiss + Terminal) panel.
 All event times are ORIGINAL-video seconds (word timestamps); the renderer maps new time -> original time."""
 import os, sys, math, json, subprocess
-HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.join(HERE, "previews"); sys.path.insert(0, HERE); os.makedirs(ROOT, exist_ok=True)
+HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.join(HERE, "previews"); DATOS = os.path.join(HERE, "datos"); sys.path[:0] = [HERE, os.path.join(os.path.dirname(HERE), "motor")]; os.makedirs(ROOT, exist_ok=True)
 import numpy as np, av
 from PIL import Image, ImageDraw
 import render as R
@@ -22,7 +22,7 @@ def slide(t, t0, d=0.35, dist=24):
 # ------------------------------------------------------------------ EDL
 A16 = {}
 def build_edl(name, segs, pre=0.05, post=0.07):
-    a = np.load(A16.get(name) or os.path.join(HERE, f"{name}_a16.npy"))
+    a = np.load(A16.get(name) or os.path.join(DATOS, f"{name}_a16.npy"))
     fr = 160; rms = np.sqrt(np.convolve(a ** 2, np.ones(fr) / fr, "same"))[::fr]
     def valley(t, w):
         i0, i1 = int((t - w) * 100), int((t + w) * 100); return (i0 + int(np.argmin(rms[i0:i1]))) / 100
@@ -548,7 +548,7 @@ def run(cfg, mode, args):
         print("dur", round(TL.dur, 2)); return
     if mode == "qa":                                   # quality gate on the finished MP4 (cuts = where takes meet)
         import qa
-        a16 = np.load(cfg.get("a16") or A16.get(cfg["name"]) or os.path.join(HERE, f"{cfg['name']}_a16.npy"))
+        a16 = np.load(cfg.get("a16") or A16.get(cfg["name"]) or os.path.join(DATOS, f"{cfg['name']}_a16.npy"))
         qa.check(cfg["out"], cuts=TL.starts[1:], voice=os.path.join(ROOT, f"{cfg['name']}_audio.wav"), src_a16=a16, edl=TL.edl); return
     if mode == "stills":
         for tn, img in frames_iter(src, TL, sorted(float(x) for x in args)):

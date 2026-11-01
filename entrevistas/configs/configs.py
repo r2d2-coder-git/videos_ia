@@ -1,10 +1,10 @@
 import os, sys
-HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE); sys.path.insert(0, os.path.dirname(HERE))
+HERE = os.path.dirname(os.path.abspath(__file__)); ENT = os.path.dirname(HERE); sys.path.insert(0, ENT)
 import pandas as pd
 import hybrid
 import render2
 
-OUTDIR = os.path.dirname(HERE) + "/entrevistas/finales/"
+OUTDIR = ENT + "/finales/"
 th = lambda v: f"{int(v):,}".replace(",", ".")
 dec = lambda v, n=1: f"{v:.{n}f}".replace(".", ",")
 
@@ -343,7 +343,7 @@ DISNEY["data"]["pool"] = _dpool
 
 # ------------------------------------------------------------------ APPLE 1 (apps gratis vs pago)
 APPLE1 = dict(
-    name="apple_1", src=os.path.dirname(HERE) + "/entrevistas/brutos/2026-10-04 15-40-48.mp4",
+    name="apple_1", src=ENT + "/brutos/2026-10-04 15-40-48.mp4",
     out=OUTDIR + "apple_gratis_vs_pago_editado.mp4",
     segs=[(3.42, 6.43), (15.17, 22.62), (24.80, 30.72, "ve"), (37.82, 42.21), (42.78, 43.49), (49.76, 53.63), (53.95, 55.36),
           (55.55, 60.48), (60.74, 61.82, "ve"), (64.00, 66.58, "ve"), (85.25, 88.10), (88.26, 90.94), (104.99, 109.34), (132.93, 135.74),
@@ -475,7 +475,7 @@ def _brow(r):
             f"{int(r.price)}" if pd.notna(r.price) else "—", th(r.number_of_reviews), lr]
 _brows = [_brow(r) for _, r in _bdf.head(14).iterrows()]
 _bpool = [_brow(r) for _, r in _bdf.sample(30, random_state=5).iterrows()]
-_bsp = _json.load(open(os.path.join(HERE, "airbnb_madrid_1.json")))["speech"]
+_bsp = _json.load(open(os.path.join(ENT, "datos", "airbnb_madrid_1.json")))["speech"]
 _ex = _bact[_bact["last_review"].dt.year.isin([2022, 2024, 2026])].groupby(_bact["last_review"].dt.year).head(1).sort_values("last_review").head(3)
 
 AIRBNB1 = dict(

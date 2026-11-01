@@ -1,7 +1,7 @@
 """Prepare a raw recording for the hybrid "entrevista técnica" editor.
-Usage: .venv/bin/python prep.py <name> <video>
+Usage: motor/.venv/bin/python motor/prep.py <name> <video> [outdir=entrevistas/datos]
 Writes <name>_a16.npy (16 kHz mono audio, used by build_edl) and <name>_pieces.json (Silero VAD pieces, each one
-transcribed on its own with word timestamps in ORIGINAL seconds) next to this file, and prints every piece so the
+transcribed on its own with word timestamps in ORIGINAL seconds) in outdir, and prints every piece so the
 best take of each sentence can be chosen."""
 import os, sys, json, subprocess
 import numpy as np
@@ -10,6 +10,7 @@ from faster_whisper.vad import get_speech_timestamps, VadOptions
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 name, src = sys.argv[1], sys.argv[2]
+OUT = sys.argv[3] if len(sys.argv) > 3 else os.path.join(os.path.dirname(HERE), "entrevistas", "datos")
 info = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height,color_transfer,r_frame_rate",
                        "-of", "default=nw=1", src], capture_output=True, text=True).stdout
 print(info.strip())
@@ -18,7 +19,7 @@ if "arib-std-b67" in info:
 raw = subprocess.run(["ffmpeg", "-nostdin", "-loglevel", "error", "-i", src, "-ac", "1", "-ar", "16000", "-f", "f32le", "-"],
                      capture_output=True, check=True).stdout          # faster_whisper.decode_audio breaks with new PyAV
 a = np.frombuffer(raw, np.float32).copy()
-np.save(os.path.join(HERE, f"{name}_a16.npy"), a)
+np.save(os.path.join(OUT, f"{name}_a16.npy"), a)
 sp = [(t["start"] / 16000, t["end"] / 16000) for t in get_speech_timestamps(
     a, VadOptions(threshold=0.5, min_silence_duration_ms=100, speech_pad_ms=0, min_speech_duration_ms=80))]
 m = WhisperModel("small", device="cpu", compute_type="int8")
@@ -29,5 +30,5 @@ for s, e in sp:
     ws = [[round(w.start + s - 0.03, 2), round(w.end + s - 0.03, 2), w.word.strip()] for x in segs for w in x.words]
     pieces.append({"s": round(s, 2), "e": round(e, 2), "text": " ".join(w[2] for w in ws), "words": ws})
     print(f"{s:7.2f}-{e:7.2f}  {pieces[-1]['text']}", flush=True)
-json.dump(pieces, open(os.path.join(HERE, f"{name}_pieces.json"), "w"), ensure_ascii=False)
-print(f"{len(pieces)} pieces · {len(a) / 16000:.1f} s · words: motor/{name}_pieces.json")
+json.dump(pieces, open(os.path.join(OUT, f"{name}_pieces.json"), "w"), ensure_ascii=False)
+print(f"{len(pieces)} pieces · {len(a) / 16000:.1f} s · words: {OUT}/{name}_pieces.json")

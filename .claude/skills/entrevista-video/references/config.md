@@ -1,15 +1,15 @@
-# Configuración de un vídeo (motor/hybrid.py)
+# Configuración de un vídeo (entrevistas/hybrid.py)
 
 Un vídeo es un `dict` que se pasa a `hybrid.run(cfg, modo, args)`. **Todos los tiempos son segundos del vídeo
 original** (palabras de `<nombre>_pieces.json`); `Timeline` los recoloca en el montaje. Una escena dura desde su
-`t0` hasta el `t0` de la siguiente. Ejemplo completo y actual: `V1` en `motor/configs_lote8.py`.
+`t0` hasta el `t0` de la siguiente. Ejemplo completo y actual: `V1` en `entrevistas/configs/configs_lote8.py`.
 
 ## Raíz
 | clave | qué es |
 |---|---|
-| `name` | id; nombra stills (`motor/previews/s_<name>_*.jpg`) y audio temporal |
+| `name` | id; nombra stills (`entrevistas/previews/s_<name>_*.jpg`) y audio temporal |
 | `src` | vídeo fuente (máster SDR si era HDR) |
-| `a16` | ruta del `.npy` de `prep.py` (si no, busca `motor/<name>_a16.npy`) |
+| `a16` | ruta del `.npy` de `prep.py` (si no, busca `entrevistas/datos/<name>_a16.npy`) |
 | `out` | MP4 final |
 | `segs` | tomas `(s, e[, "vs"][, "ve"])`; añade 0,05 s antes / 0,07 s después; `"vs"/"ve"` = cortar en valle de energía (±0,08 s) |
 | `emph` | `[(t0, t1), …]` zoom 12 % en la cara (se alterna además un punch-in 1,07 en cada corte) |
@@ -46,7 +46,7 @@ Stack Overflow (por defecto, glifo de Apple), `info=[]`. Existen `job` (tarjeta 
 
 ## Utilidades
 - `motor/prep.py <nombre> <vídeo>` — audio 16 kHz + trozos VAD con palabras.
-- `motor/qa.py <mp4> [--cuts …] [--voz voz.wav] [--expect guion.txt]` — control de calidad; desde el motor:
+- `motor/qa.py <mp4> [--cuts …] [--voz voz.wav] [--expect guion.txt]` — control de calidad; desde las configuraciones:
   `configs*.py <v> qa` (pasa solo los cortes, la voz sin efectos y el audio original para detectar palabras comidas).
 - `motor/verify.py <mp4…>` — versión rápida: arranque y hueco máximo entre frases.
 - `motor/hdr2prores.swift in out.mov` — máster SDR ProRes con el tone-mapping de Apple (clips HLG del iPhone).

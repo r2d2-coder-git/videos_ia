@@ -6,13 +6,13 @@ description: Edita los vídeos «Entrevista técnica» de @r2d2.coder (Arturo re
 # Entrevista técnica · vídeo
 
 Montas un reel vertical (1080×1920, 30 fps) a partir de su grabación: **cara arriba (605 px)** y debajo un **panel
-que explica lo que dice**, sincronizado palabra a palabra. Todo sale de código (`motor/hybrid.py`), así que cada
+que explica lo que dice**, sincronizado palabra a palabra. Todo sale de código (`entrevistas/hybrid.py`), así que cada
 cifra en pantalla tiene que ser la real. El formato está iterado vídeo a vídeo con Arturo: respétalo y no
 reintroduzcas lo que ya rechazó (lista al final).
 
-Rutas (desde `videos_ia/`): motor en `motor/`, Python con Whisper en `motor/.venv/bin/python`, datasets y notebooks en
+Rutas (desde `videos_ia/`): montador en `entrevistas/hybrid.py`, configuraciones en `entrevistas/configs/`, código común en `motor/`, Python con Whisper en `motor/.venv/bin/python`, datasets y notebooks en
 `~/Desktop/codigo_rrss/ejercicios-instagram/data-science/<empresa>/`. Referencia completa de la configuración en
-`references/config.md`; ejemplo vivo: `V1` (remoto vs presencial, Stack Overflow) en `motor/configs_lote8.py`.
+`references/config.md`; ejemplo vivo: `V1` (remoto vs presencial, Stack Overflow) en `entrevistas/configs/configs_lote8.py`.
 
 ## Pasos
 
@@ -27,9 +27,9 @@ Rutas (desde `videos_ia/`): motor en `motor/`, Python con Whisper en `motor/.ven
 
 ### 2. Preparar
 ```bash
-cd motor && .venv/bin/python prep.py <nombre> "<vídeo>"
+motor/.venv/bin/python motor/prep.py <nombre> "<vídeo>"
 ```
-Deja `<nombre>_a16.npy` y `<nombre>_pieces.json` (trozos de voz VAD con palabras y tiempos en segundos del original)
+Deja en `entrevistas/datos/` `<nombre>_a16.npy` y `<nombre>_pieces.json` (trozos de voz VAD con palabras y tiempos en segundos del original)
 e imprime cada trozo. Si avisa de **HDR (HLG)** —sus .MOV de iPhone—, saca antes el máster SDR con
 `swift hdr2prores.swift in.MOV master.mov` y edita desde el máster (si no, sale lavado y blanco).
 
@@ -42,7 +42,7 @@ que el vídeo quede en **~55-60 s** y el código no se coma más de la mitad.
 («2025» se quedó en «2020»). Transcribe el trozo con la frase siguiente pegada y mueve el fin hasta que se oiga entera.
 
 ### 4. Configurar
-Copia la estructura de `V1` en `motor/configs_lote8.py` (o un archivo nuevo con el mismo patrón) y rellena las
+Copia la estructura de `V1` en `entrevistas/configs/configs_lote8.py` (o un archivo nuevo con el mismo patrón) y rellena las
 escenas con tiempos de palabra **del original** (el motor los mapea al montaje):
 `intro → data → question → code (+ viz) → result → concl → cta`, más `emph` y `clean_term=True`.
 Detalle de cada clave en `references/config.md`. Reglas que ya están decididas:
@@ -61,10 +61,10 @@ Detalle de cada clave en `references/config.md`. Reglas que ya están decididas:
 
 ### 5. Revisar y renderizar
 ```bash
-.venv/bin/python configs_lote8.py <v> edl            # cortes y duración
-.venv/bin/python configs_lote8.py <v> stills 1.5 6 14 …   # fotogramas → motor/previews/
-.venv/bin/python configs_lote8.py <v> full           # MP4 final (en segundo plano: tarda varios minutos)
-.venv/bin/python configs_lote8.py <v> qa             # control de calidad (obligatorio antes de entregar)
+motor/.venv/bin/python entrevistas/configs/configs_lote8.py <v> edl            # cortes y duración
+motor/.venv/bin/python entrevistas/configs/configs_lote8.py <v> stills 1.5 6 14 …   # fotogramas → entrevistas/previews/
+motor/.venv/bin/python entrevistas/configs/configs_lote8.py <v> full           # MP4 final (en segundo plano: tarda varios minutos)
+motor/.venv/bin/python entrevistas/configs/configs_lote8.py <v> qa             # control de calidad (obligatorio antes de entregar)
 ```
 Mira una hoja de fotogramas (una por escena) **antes** del render completo. Tras el render, `qa` revisa formato y
 color, arranque y pausas de voz, **palabras comidas en cada corte** (compara cada final de toma con el original),

@@ -4,7 +4,7 @@ import os, sys, math, subprocess, wave
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 HERE = os.path.dirname(os.path.abspath(__file__))
-MOTOR = os.path.join(os.path.dirname(os.path.dirname(HERE)), "motor"); sys.path.insert(0, MOTOR)
+BASE = os.path.dirname(os.path.dirname(HERE)); sys.path[:0] = [os.path.join(BASE, "motor"), os.path.join(BASE, "entrevistas")]
 import hybrid
 from render import eo, pr, mix
 from stylef import MO

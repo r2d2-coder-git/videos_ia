@@ -1,8 +1,8 @@
 """Batch of 8 old-format videos (lote8) re-edited in the approved hybrid format.
 Sources: raw clips concatenated per video (entrevistas/brutos/lote8/<v>/raw.mp4); takes chosen to reproduce the editor's render (lote8/_alinea.py)."""
 import os, sys, math
-HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
-LOTE = os.path.join(os.path.dirname(HERE), "entrevistas", "brutos", "lote8")
+HERE = os.path.dirname(os.path.abspath(__file__)); ENT = os.path.dirname(HERE); sys.path.insert(0, ENT)
+LOTE = os.path.join(ENT, "brutos", "lote8")
 sys.path.insert(0, LOTE)
 import hybrid
 from render import eo, pr, mix
@@ -10,7 +10,7 @@ from stylef import MO
 from render2 import HV
 from _alinea import align
 
-OUTDIR = os.path.join(os.path.dirname(HERE), "entrevistas", "finales") + "/"
+OUTDIR = os.path.join(ENT, "finales") + "/"
 os.makedirs(OUTDIR, exist_ok=True)
 TB, TP, INK, MUT, ACC = (10, 12, 15), (15, 18, 22), (220, 226, 234), (110, 120, 135), (88, 166, 255)
 GREEN, RED_, YEL = (86, 211, 140), (240, 90, 90), (255, 214, 64)
