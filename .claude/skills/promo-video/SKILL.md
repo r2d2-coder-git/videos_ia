@@ -54,8 +54,8 @@ plano (`promo.py full`).
 ### 6. QA y entrega
 `promo.py qa` → formato y color BT.709, arranque y pausas de voz, **palabras cortadas en los cortes**, **planos de
 menos de 0,5 s** (el «microframe» de su cara entre dos gráficos: haz que cada gráfico empiece/acabe exactamente en el
-corte o en el siguiente plano), hoja de fotogramas y copia `_movil.mp4` < 30 MB. Arregla los avisos y vuelve a pasar.
-Envía con `SendUserFile` el vídeo (y la copia móvil si el original pesa > 30 MB) y la **portada** (su fotograma más
+corte o en el siguiente plano), y hoja de fotogramas. Arregla los avisos y vuelve a pasar.
+Envía con `SendUserFile` el vídeo y la **portada** (su fotograma más
 expresivo + «APRENDE X GRATIS Y EN ESPAÑOL 🔥» en cajas negras redondeadas, texto blanco, dentro del recorte 4:5,
 y ≈ 285-1635). Recuérdale poner la música desde Instagram.
 

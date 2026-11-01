@@ -68,8 +68,8 @@ motor/.venv/bin/python entrevistas/configs/configs_lote8.py <v> qa             #
 ```
 Mira una hoja de fotogramas (una por escena) **antes** del render completo. Tras el render, `qa` revisa formato y
 color, arranque y pausas de voz, **palabras comidas en cada corte** (compara cada final de toma con el original),
-planos de menos de 0,5 s, deja la hoja `<vídeo>_hoja.jpg`, la transcripción completa y, si pesa > 30 MB, la copia
-`_movil.mp4`. Arregla cada AVISO y vuelve a pasarlo.
+planos de menos de 0,5 s, deja la hoja `<vídeo>_hoja.jpg` y la transcripción completa.
+Arregla cada AVISO y vuelve a pasarlo.
 
 ### 6. Portada
 PNG 1080×1920 junto al vídeo: su cara (fotograma expresivo de la grabación) arriba, título en el estilo suizo del
@@ -77,8 +77,7 @@ vídeo («Data Analyst / **en <Empresa>**» con el color de la marca o la pregun
 gancho (barras con «?»). Todo el texto dentro del recorte 4:5 de la cuadrícula del perfil (y ≈ 285-1635).
 
 ### 7. Entregar
-Envía el MP4 (y la portada) con `SendUserFile`; si pesa > 30 MB envía también la copia `_movil.mp4` que deja `qa`
-(si no, no le llega al móvil).
+Envía el MP4 (y la portada) con `SendUserFile`; los pasa al móvil por AirDrop.
 Resume qué cambiaste y lo que no pudiste arreglar (p. ej. una palabra mal dicha). Recuérdale que la **música** la
 ponga desde Instagram al publicar.
 

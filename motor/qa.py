@@ -1,5 +1,5 @@
 """Quality gate for every finished reel — run it before sending a video to Arturo.
-Usage: motor/.venv/bin/python motor/qa.py <video.mp4> [--cuts 2.35,5.03,…] [--voz voz_sin_efectos.wav] [--expect texto.txt] [--no-movil]
+Usage: motor/.venv/bin/python motor/qa.py <video.mp4> [--cuts 2.35,5.03,…] [--voz voz_sin_efectos.wav] [--expect texto.txt]
 From code: qa.check(mp4, cuts=[…], expect="…")  (hybrid.run(cfg, "qa") and promo scripts pass their cut times).
 
 Checks (each line prints OK or AVISO):
@@ -8,8 +8,7 @@ Checks (each line prints OK or AVISO):
   cortes    at every cut: still voiced right before it = a word was probably clipped («2025» → «2020»)
   planos    shots shorter than 0.5 s (the stray "microframe" of his face between two graphics)
   texto     full transcript; with --expect, similarity to the expected script and the missing words
-Outputs next to the video: <name>_hoja.jpg (one frame every 2 s) and, if > 30 MB, <name>_movil.mp4 (< 30 MB, so it
-reaches his phone through SendUserFile)."""
+Outputs next to the video: <name>_hoja.jpg (one frame every 2 s)."""
 import os, sys, json, subprocess, difflib, re
 import numpy as np
 
@@ -48,7 +47,7 @@ def clipped_words(a16, edl, starts):
             out.append((st + e - s, cut[-1], alt))
     return out
 
-def check(mp4, cuts=None, expect=None, movil=True, transcribe=True, voice=None, src_a16=None, edl=None):
+def check(mp4, cuts=None, expect=None, transcribe=True, voice=None, src_a16=None, edl=None):
     res = []; say = lambda ok, k, msg: (res.append((ok, k, msg)), print(f"{'OK   ' if ok else 'AVISO'} {k:8s} {msg}", flush=True))
     base = os.path.splitext(mp4)[0]
     # ---- formato
@@ -107,14 +106,6 @@ def check(mp4, cuts=None, expect=None, movil=True, transcribe=True, voice=None, 
             ratio = difflib.SequenceMatcher(None, norm(e), norm(text)).ratio()
             miss = [w for w in norm(e) if w not in set(norm(text))][:25]
             say(ratio > 0.85, "texto", f"parecido al guion {ratio:.0%}" + (f"  · faltan: {' '.join(miss)}" if miss else ""))
-    # ---- copia para el móvil
-    if movil and mb > 30:
-        kbps = int((27 * 8 * 1024) / dur) - 160
-        m = base + "_movil.mp4"
-        subprocess.run(["ffmpeg", "-nostdin", "-loglevel", "error", "-y", "-i", mp4, "-c:v", "libx264", "-preset", "medium", "-b:v", f"{kbps}k",
-                        "-maxrate", f"{int(kbps * 1.3)}k", "-bufsize", f"{kbps * 2}k", "-c:a", "aac", "-b:a", "128k",
-                        "-bsf:v", "h264_metadata=colour_primaries=1:transfer_characteristics=1:matrix_coefficients=1", "-movflags", "+faststart", m])
-        say(os.path.getsize(m) < 30 * 2**20, "móvil", f"{m} ({os.path.getsize(m) / 2**20:.1f} MB) para enviarlo al móvil")
     n = sum(1 for ok, *_ in res if not ok)
     print(f"QA: {n} aviso(s)" if n else "QA: todo OK")
     return res
@@ -124,4 +115,4 @@ if __name__ == "__main__":
     cuts = [float(x) for x in args[args.index("--cuts") + 1].split(",")] if "--cuts" in args else None
     voice = args[args.index("--voz") + 1] if "--voz" in args else None
     expect = args[args.index("--expect") + 1] if "--expect" in args else None
-    check(mp4, cuts, expect, movil="--no-movil" not in args, voice=voice)
+    check(mp4, cuts, expect, voice=voice)

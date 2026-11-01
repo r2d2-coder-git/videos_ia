@@ -32,7 +32,7 @@ nuevo: decodifica el audio con ffmpeg a f32le).
 - Antes de entregar cualquier vídeo, pásale **`motor/qa.py`** (entrevistas: `configs*.py <v> qa`; promos:
   `promo.py qa`) y arregla los avisos: palabras cortadas en los cortes, planos < 0,5 s (microframes), pausas,
   color sin etiqueta. Mira la hoja de fotogramas.
-- Entrega con `SendUserFile`: el vídeo, la copia `_movil.mp4` si pesa > 30 MB (si no, no le llega al móvil) y la
+- Entrega con `SendUserFile`: el vídeo (sin copia para el móvil: los pasa por AirDrop) y la
   portada. Recuérdale que la música la pone desde Instagram.
 - Él inicia sesión en las webs; tú nunca escribes contraseñas. Las capturas con sesión se hacen desde su ventana
   abierta (`motor/cdp_shot.py`).
