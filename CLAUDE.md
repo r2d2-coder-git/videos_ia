@@ -25,6 +25,7 @@ nuevo: decodifica el audio con ffmpeg a f32le).
 - Calidad de imagen del iPhone: ver `.claude/rules/calidad-iphone.md`.
 
 ## Reglas de trabajo
+- **Solo se guardan los vídeos terminados.** Los brutos y másteres no se conservan al acabar: cambiar un vídeo ya entregado exige que Arturo vuelva a pasar la grabación.
 - **Datos reales o nada**: ejecuta su código sobre el CSV real; si falta el CSV, busca la fuente oficial y pide
   permiso antes de descargar (archivo, origen, tamaño). Si lo que sale no cuadra con lo que dice, avísale.
 - Renders largos en segundo plano y espera la notificación; nunca bucles de espera en primer plano.

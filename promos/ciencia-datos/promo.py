@@ -10,8 +10,8 @@ from render import eo, pr, mix
 from stylef import MO
 from render2 import HV
 
-SRC = os.path.join(HERE, "src_prores_mp4.mov")          # SDR ProRes master — video only. Not kept (7 GB); regenerate: swift ../../motor/hdr2prores.swift originales/ciencia_datos_bds.mp4 src_prores_mp4.mov
-AUDIO = os.path.join(HERE, "originales", "ciencia_datos_bds.mp4")   # original recording: the voice comes from here
+SRC = os.path.join(HERE, "src_prores_mp4.mov")          # SDR ProRes master — video only. Not kept; to re-render, get the recording back and run motor/hdr2prores.swift
+AUDIO = os.path.join(HERE, "originales", "ciencia_datos_bds.mp4")   # original recording, not kept: the voice comes from here
 SH = os.path.join(HERE, "shots")                          # platform screenshots
 OUT = os.path.join(HERE, "ciencia_datos_bds_editado.mp4")
 W, H, FPS = 1080, 1920, 60
