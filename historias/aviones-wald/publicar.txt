@@ -1,0 +1,15 @@
+Querían blindar los aviones donde tenían más balazos… y era al revés
+
+En 1943 los aviones que volvían traían agujeros en el fuselaje y las alas, casi ninguno en los motores. Lo obvio era blindar donde estaban los agujeros. Abraham Wald se preguntó por los aviones que no volvieron.
+Los datos que no ves también cuentan: clientes que se fueron, startups que cerraron, modelos descartados. Antes de sacar conclusiones, pregúntate quién falta en tus datos. Eso es el sesgo de supervivencia.
+
+Sígueme para más historias de datos
+
+Fuentes:
+- Wald, A. (1943). A Method of Estimating Plane Vulnerability Based on Damage of Survivors. Statistical Research Group, Columbia University (reimpr. CNA, CRC 432, 1980).
+- Mangel, M. y Samaniego, F. J. (1984). «Abraham Wald's Work on Aircraft Survivability». JASA 79(386): 259-267.
+- Misión Schweinfurt-Regensburg, 17 ago 1943 (60 B-17 derribados): https://en.wikipedia.org/wiki/Schweinfurt%E2%80%93Regensburg_mission
+- Abraham Wald: https://en.wikipedia.org/wiki/Abraham_Wald
+- El patrón de agujeros del vídeo es ilustrativo (versión divulgativa, Ellenberg 2014), no los datos reales de Wald.
+
+#datos #estadistica #datascience #sesgodesupervivencia #historiasdedatos

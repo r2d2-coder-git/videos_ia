@@ -1,0 +1,187 @@
+{
+ "id": "aviones-wald",
+ "titulo": "Querían blindar los aviones donde tenían más balazos… y era al revés",
+ "duracion_objetivo": 85,
+ "beats": [
+  {
+   "n": 1,
+   "nombre": "Gancho",
+   "plano": "cara",
+   "ancla": "Querían blindar los aviones",
+   "idea": "La paradoja: la decisión obvia era la equivocada",
+   "visual": "Él a cámara; a su lado entra la silueta cenital de un bombardero acribillado de puntos rojos y le cae encima un sello naranja «AL REVÉS»",
+   "dato": ""
+  },
+  {
+   "n": 2,
+   "nombre": "Año",
+   "plano": "3d",
+   "ancla": "Mil novecientos cuarenta y tres",
+   "idea": "Situar: Segunda Guerra Mundial, 1943",
+   "visual": "3D: plano cercano de un B-17 en vuelo sobre las nubes; la cámara se aleja y revela una formación de bombarderos que llena el cielo; rótulo «1943»",
+   "dato": "1943"
+  },
+  {
+   "n": 3,
+   "nombre": "Pérdidas",
+   "plano": "3d",
+   "ancla": "Solo el diecisiete de agosto",
+   "idea": "La escala de las pérdidas en un solo día",
+   "visual": "3D: misma formación desde arriba; uno a uno, 60 bombarderos se tiñen de rojo, se inclinan y caen dejando humo; contador «60 no vuelven»",
+   "dato": "60 bombarderos perdidos · 17 ago 1943 (misión Schweinfurt-Regensburg)"
+  },
+  {
+   "n": 4,
+   "nombre": "Columbia",
+   "plano": "3d",
+   "ancla": "En Nueva York, en la Universidad",
+   "idea": "Dónde y quién: matemáticos trabajando para la guerra",
+   "visual": "3D: Manhattan de noche en bloques; la cámara baja hacia el norte de la isla, donde una baliza roja marca Columbia; rótulo «Statistical Research Group»",
+   "dato": "Statistical Research Group · Universidad de Columbia"
+  },
+  {
+   "n": 5,
+   "nombre": "Wald",
+   "plano": "hibrido",
+   "ancla": "Uno es Abraham Wald",
+   "idea": "Presentar al protagonista",
+   "visual": "Él en franja superior; abajo se abre la puerta y aparece una ficha de archivo mecanografiada «ABRAHAM WALD · 1902» con una flecha de ruta en un mapa: Viena → Nueva York, 1938",
+   "dato": "Abraham Wald · n. 1902 · sale de Austria tras la anexión de 1938"
+  },
+  {
+   "n": 6,
+   "nombre": "El problema",
+   "plano": "2d",
+   "ancla": "El problema: el blindaje pesa",
+   "idea": "El dilema: blindaje = peso, hay que elegir dónde",
+   "visual": "La ficha se pliega y se convierte en una báscula: en un platillo, una placa de acero; en el otro, el avión, que sube; un indicador de combustible baja. Luego placas grises intentan cubrir el avión entero, la báscula cruje y las placas saltan: queda un «¿?» naranja sobre la silueta",
+   "dato": ""
+  },
+  {
+   "n": 7,
+   "nombre": "Los datos",
+   "plano": "3d",
+   "ancla": "Los aviones que vuelven traen",
+   "idea": "Los datos de los supervivientes: dónde están los agujeros",
+   "visual": "3D: el mismo B-17 aislado, la cámara gira a tres cuartos; los agujeros rojos aparecen en oleada sobre fuselaje y alas (patrón ilustrativo)",
+   "dato": ""
+  },
+  {
+   "n": 8,
+   "nombre": "Motores limpios",
+   "plano": "3d",
+   "ancla": "En los motores, casi ninguno",
+   "idea": "El hueco en los datos que nadie mira",
+   "visual": "3D: la cámara se acerca a los motores limpios, marcados con «0»; termina cenital, en la posición del avión del notebook",
+   "dato": ""
+  },
+  {
+   "n": 9,
+   "nombre": "Lo obvio",
+   "plano": "2d",
+   "ancla": "La conclusión parece obvia",
+   "idea": "La conclusión intuitiva",
+   "visual": "Placas grises se atornillan justo encima de las zonas con puntos rojos; aparece un tic verde… que tiembla",
+   "dato": ""
+  },
+  {
+   "n": 10,
+   "nombre": "Giro",
+   "plano": "cara",
+   "ancla": "Wald se hizo otra pregunta",
+   "idea": "La pregunta que da la vuelta a la historia",
+   "visual": "Él a cámara, serio; en una esquina el avión blindado del beat 9 se vuelve translúcido, como un fantasma",
+   "dato": ""
+  },
+  {
+   "n": 11,
+   "nombre": "Los que no volvieron",
+   "plano": "3d",
+   "ancla": "En los motores no faltan agujeros",
+   "idea": "El motor limpio no es suerte: es una ausencia",
+   "visual": "3D: el avión blindado desde arriba gira a tres cuartos; a su alrededor aparecen aviones fantasma con los motores perforados",
+   "dato": ""
+  },
+  {
+   "n": 12,
+   "nombre": "Derribados",
+   "plano": "3d",
+   "ancla": "Faltan porque los aviones",
+   "idea": "Los datos que faltan son los de los derribados",
+   "visual": "3D: los fantasmas se inclinan y caen uno a uno dejando humo; el avión que vuelve se queda solo",
+   "dato": ""
+  },
+  {
+   "n": 13,
+   "nombre": "La inversión",
+   "plano": "3d",
+   "ancla": "Donde no ves agujeros",
+   "idea": "Blindar donde NO hay agujeros",
+   "visual": "3D: las placas se despegan del fuselaje y las alas y vuelan a los motores, que se encienden en naranja",
+   "dato": ""
+  },
+  {
+   "n": 14,
+   "nombre": "El informe",
+   "plano": "hibrido",
+   "ancla": "Lo dejó por escrito",
+   "idea": "No es una anécdota: es un método matemático",
+   "visual": "El avión naranja se aplana y es el dibujo de la portada de un memorándum mecanografiado «A Method of Estimating Plane Vulnerability Based on Damage of Survivors», fecha 1943; él en recuadro inferior",
+   "dato": "Informe de Wald, 1943 · Statistical Research Group"
+  },
+  {
+   "n": 15,
+   "nombre": "El método",
+   "plano": "2d",
+   "ancla": "cómo calcular lo vulnerable",
+   "idea": "Lo que resolvió: estimar el daño de todos con los datos de los que sobreviven",
+   "visual": "Él en recuadro; el memorándum se abre: a la izquierda el avión que volvió, a la derecha los fantasmas, y una flecha «→ estimación» los une en un único avión con zonas coloreadas de menos a más vulnerable (motores en naranja)",
+   "dato": ""
+  },
+  {
+   "n": 16,
+   "nombre": "El nombre",
+   "plano": "cara",
+   "ancla": "Esto se llama sesgo de supervivencia",
+   "idea": "Poner nombre al concepto",
+   "visual": "Él a cámara; el memorándum se cierra y deja un rótulo en mayúsculas «SESGO DE SUPERVIVENCIA» con el avión pequeño como icono",
+   "dato": ""
+  },
+  {
+   "n": 17,
+   "nombre": "En tu trabajo",
+   "plano": "cara",
+   "ancla": "Y lo tienes en tu trabajo",
+   "idea": "Ejemplo 1 del día a día: churn",
+   "visual": "Él a cámara; arriba, una tarjeta con la tabla de clientes: las bajas son filas fantasma que parpadean",
+   "dato": ""
+  },
+  {
+   "n": 18,
+   "nombre": "Más ejemplos",
+   "plano": "hibrido",
+   "ancla": "solo las startups que triunfaron",
+   "idea": "Ejemplos 2 y 3: éxito empresarial y modelos en producción",
+   "visual": "Él en franja superior; la tabla se desliza y entra una pared de logos de startups con las que cerraron en gris translúcido, y luego una lista de modelos con los descartados tachados; lo fantasma parpadea en naranja",
+   "dato": ""
+  },
+  {
+   "n": 19,
+   "nombre": "Criterio",
+   "plano": "cara",
+   "ancla": "Antes de sacar conclusiones",
+   "idea": "La regla para llevarse: pregunta quién falta",
+   "visual": "Él a cámara; a su lado una tabla de datos con huecos marcados con contorno discontinuo naranja y la etiqueta «¿QUIÉN FALTA?»",
+   "dato": ""
+  },
+  {
+   "n": 20,
+   "nombre": "CTA",
+   "plano": "cara",
+   "ancla": "Sígueme para más historias",
+   "idea": "Cierre y seguimiento",
+   "visual": "Él a cámara; el avión del gancho, ahora con placas en los motores, cruza detrás y sale de cuadro; @r2d2.coder",
+   "dato": ""
+  }
+ ]
+}

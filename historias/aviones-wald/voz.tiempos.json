@@ -1,0 +1,1199 @@
+{
+ "duracion": 65.247,
+ "provisional": true,
+ "acierto": 0.949,
+ "palabras": [
+  {
+   "p": "Querían",
+   "ini": 0.0,
+   "fin": 0.28
+  },
+  {
+   "p": "blindar",
+   "ini": 0.28,
+   "fin": 0.58
+  },
+  {
+   "p": "los",
+   "ini": 0.58,
+   "fin": 0.72
+  },
+  {
+   "p": "aviones",
+   "ini": 0.72,
+   "fin": 0.96
+  },
+  {
+   "p": "justo",
+   "ini": 0.96,
+   "fin": 1.22
+  },
+  {
+   "p": "donde",
+   "ini": 1.22,
+   "fin": 1.46
+  },
+  {
+   "p": "tenían",
+   "ini": 1.46,
+   "fin": 1.78
+  },
+  {
+   "p": "más",
+   "ini": 1.78,
+   "fin": 1.98
+  },
+  {
+   "p": "balazos.",
+   "ini": 1.98,
+   "fin": 2.44
+  },
+  {
+   "p": "Y",
+   "ini": 2.62,
+   "fin": 2.8
+  },
+  {
+   "p": "era",
+   "ini": 2.8,
+   "fin": 2.92
+  },
+  {
+   "p": "al",
+   "ini": 2.92,
+   "fin": 3.02
+  },
+  {
+   "p": "revés.",
+   "ini": 3.02,
+   "fin": 3.32
+  },
+  {
+   "p": "Mil",
+   "ini": 3.32,
+   "fin": 3.736
+  },
+  {
+   "p": "novecientos",
+   "ini": 3.736,
+   "fin": 4.152
+  },
+  {
+   "p": "cuarenta",
+   "ini": 4.152,
+   "fin": 4.568
+  },
+  {
+   "p": "y",
+   "ini": 4.568,
+   "fin": 4.984
+  },
+  {
+   "p": "tres.",
+   "ini": 4.984,
+   "fin": 5.4
+  },
+  {
+   "p": "Los",
+   "ini": 5.4,
+   "fin": 5.58
+  },
+  {
+   "p": "bombarderos",
+   "ini": 5.58,
+   "fin": 6.04
+  },
+  {
+   "p": "aliados",
+   "ini": 6.04,
+   "fin": 6.38
+  },
+  {
+   "p": "caen",
+   "ini": 6.38,
+   "fin": 6.66
+  },
+  {
+   "p": "a",
+   "ini": 6.66,
+   "fin": 6.74
+  },
+  {
+   "p": "decenas.",
+   "ini": 6.74,
+   "fin": 7.08
+  },
+  {
+   "p": "Solo",
+   "ini": 7.36,
+   "fin": 7.64
+  },
+  {
+   "p": "el",
+   "ini": 7.64,
+   "fin": 7.74
+  },
+  {
+   "p": "diecisiete",
+   "ini": 7.74,
+   "fin": 8.12
+  },
+  {
+   "p": "de",
+   "ini": 8.12,
+   "fin": 8.34
+  },
+  {
+   "p": "agosto,",
+   "ini": 8.34,
+   "fin": 8.64
+  },
+  {
+   "p": "sesenta",
+   "ini": 8.64,
+   "fin": 9.16
+  },
+  {
+   "p": "no",
+   "ini": 9.16,
+   "fin": 9.46
+  },
+  {
+   "p": "vuelven.",
+   "ini": 9.46,
+   "fin": 9.78
+  },
+  {
+   "p": "En",
+   "ini": 10.28,
+   "fin": 10.42
+  },
+  {
+   "p": "Nueva",
+   "ini": 10.42,
+   "fin": 10.62
+  },
+  {
+   "p": "York,",
+   "ini": 10.62,
+   "fin": 10.92
+  },
+  {
+   "p": "en",
+   "ini": 11.2,
+   "fin": 11.28
+  },
+  {
+   "p": "la",
+   "ini": 11.28,
+   "fin": 11.36
+  },
+  {
+   "p": "Universidad",
+   "ini": 11.36,
+   "fin": 11.9
+  },
+  {
+   "p": "de",
+   "ini": 11.9,
+   "fin": 12.02
+  },
+  {
+   "p": "Columbia,",
+   "ini": 12.02,
+   "fin": 12.68
+  },
+  {
+   "p": "un",
+   "ini": 12.68,
+   "fin": 12.8
+  },
+  {
+   "p": "grupo",
+   "ini": 12.8,
+   "fin": 12.98
+  },
+  {
+   "p": "de",
+   "ini": 12.98,
+   "fin": 13.14
+  },
+  {
+   "p": "matemáticos",
+   "ini": 13.14,
+   "fin": 13.66
+  },
+  {
+   "p": "trabaja",
+   "ini": 13.66,
+   "fin": 14.14
+  },
+  {
+   "p": "para",
+   "ini": 14.14,
+   "fin": 14.28
+  },
+  {
+   "p": "el",
+   "ini": 14.28,
+   "fin": 14.42
+  },
+  {
+   "p": "ejército.",
+   "ini": 14.42,
+   "fin": 14.82
+  },
+  {
+   "p": "Uno",
+   "ini": 15.12,
+   "fin": 15.3
+  },
+  {
+   "p": "es",
+   "ini": 15.3,
+   "fin": 15.4
+  },
+  {
+   "p": "Abraham",
+   "ini": 15.4,
+   "fin": 15.62
+  },
+  {
+   "p": "Wald,",
+   "ini": 15.62,
+   "fin": 16.16
+  },
+  {
+   "p": "que",
+   "ini": 16.16,
+   "fin": 16.3
+  },
+  {
+   "p": "había",
+   "ini": 16.3,
+   "fin": 16.46
+  },
+  {
+   "p": "huido",
+   "ini": 16.46,
+   "fin": 16.68
+  },
+  {
+   "p": "de",
+   "ini": 16.68,
+   "fin": 16.84
+  },
+  {
+   "p": "la",
+   "ini": 16.84,
+   "fin": 16.92
+  },
+  {
+   "p": "Austria",
+   "ini": 16.92,
+   "fin": 17.12
+  },
+  {
+   "p": "nazi.",
+   "ini": 17.12,
+   "fin": 17.54
+  },
+  {
+   "p": "El",
+   "ini": 18.0,
+   "fin": 18.18
+  },
+  {
+   "p": "problema:",
+   "ini": 18.18,
+   "fin": 18.54
+  },
+  {
+   "p": "el",
+   "ini": 18.86,
+   "fin": 19.0
+  },
+  {
+   "p": "blindaje",
+   "ini": 19.0,
+   "fin": 19.36
+  },
+  {
+   "p": "pesa.",
+   "ini": 19.36,
+   "fin": 19.76
+  },
+  {
+   "p": "No",
+   "ini": 19.98,
+   "fin": 20.12
+  },
+  {
+   "p": "puedes",
+   "ini": 20.12,
+   "fin": 20.36
+  },
+  {
+   "p": "forrar",
+   "ini": 20.36,
+   "fin": 20.62
+  },
+  {
+   "p": "el",
+   "ini": 20.62,
+   "fin": 20.76
+  },
+  {
+   "p": "avión",
+   "ini": 20.76,
+   "fin": 20.94
+  },
+  {
+   "p": "entero.",
+   "ini": 20.94,
+   "fin": 21.24
+  },
+  {
+   "p": "¿Dónde",
+   "ini": 21.54,
+   "fin": 21.76
+  },
+  {
+   "p": "lo",
+   "ini": 21.76,
+   "fin": 21.92
+  },
+  {
+   "p": "pones?",
+   "ini": 21.92,
+   "fin": 22.12
+  },
+  {
+   "p": "Los",
+   "ini": 22.64,
+   "fin": 22.84
+  },
+  {
+   "p": "aviones",
+   "ini": 22.84,
+   "fin": 23.12
+  },
+  {
+   "p": "que",
+   "ini": 23.12,
+   "fin": 23.32
+  },
+  {
+   "p": "vuelven",
+   "ini": 23.32,
+   "fin": 23.58
+  },
+  {
+   "p": "traen",
+   "ini": 23.58,
+   "fin": 23.82
+  },
+  {
+   "p": "los",
+   "ini": 23.82,
+   "fin": 23.96
+  },
+  {
+   "p": "agujeros",
+   "ini": 23.96,
+   "fin": 24.36
+  },
+  {
+   "p": "en",
+   "ini": 24.36,
+   "fin": 24.52
+  },
+  {
+   "p": "el",
+   "ini": 24.52,
+   "fin": 24.62
+  },
+  {
+   "p": "fuselaje",
+   "ini": 24.62,
+   "fin": 25.06
+  },
+  {
+   "p": "y",
+   "ini": 25.06,
+   "fin": 25.18
+  },
+  {
+   "p": "en",
+   "ini": 25.18,
+   "fin": 25.24
+  },
+  {
+   "p": "las",
+   "ini": 25.24,
+   "fin": 25.36
+  },
+  {
+   "p": "alas.",
+   "ini": 25.36,
+   "fin": 25.64
+  },
+  {
+   "p": "En",
+   "ini": 25.86,
+   "fin": 26.0
+  },
+  {
+   "p": "los",
+   "ini": 26.0,
+   "fin": 26.12
+  },
+  {
+   "p": "motores,",
+   "ini": 26.12,
+   "fin": 26.48
+  },
+  {
+   "p": "casi",
+   "ini": 26.72,
+   "fin": 26.9
+  },
+  {
+   "p": "ninguno.",
+   "ini": 26.9,
+   "fin": 27.32
+  },
+  {
+   "p": "La",
+   "ini": 27.76,
+   "fin": 27.92
+  },
+  {
+   "p": "conclusión",
+   "ini": 27.92,
+   "fin": 28.38
+  },
+  {
+   "p": "parece",
+   "ini": 28.38,
+   "fin": 28.58
+  },
+  {
+   "p": "obvia:",
+   "ini": 28.58,
+   "fin": 28.94
+  },
+  {
+   "p": "refuerza",
+   "ini": 28.94,
+   "fin": 29.64
+  },
+  {
+   "p": "donde",
+   "ini": 29.64,
+   "fin": 29.8
+  },
+  {
+   "p": "están",
+   "ini": 29.8,
+   "fin": 30.06
+  },
+  {
+   "p": "los",
+   "ini": 30.06,
+   "fin": 30.24
+  },
+  {
+   "p": "agujeros.",
+   "ini": 30.24,
+   "fin": 30.68
+  },
+  {
+   "p": "Wald",
+   "ini": 32.22,
+   "fin": 32.42
+  },
+  {
+   "p": "se",
+   "ini": 32.42,
+   "fin": 32.62
+  },
+  {
+   "p": "hizo",
+   "ini": 32.62,
+   "fin": 32.8
+  },
+  {
+   "p": "otra",
+   "ini": 32.8,
+   "fin": 33.02
+  },
+  {
+   "p": "pregunta:",
+   "ini": 33.02,
+   "fin": 33.38
+  },
+  {
+   "p": "¿y",
+   "ini": 33.7,
+   "fin": 33.8
+  },
+  {
+   "p": "los",
+   "ini": 33.8,
+   "fin": 33.92
+  },
+  {
+   "p": "aviones",
+   "ini": 33.92,
+   "fin": 34.16
+  },
+  {
+   "p": "que",
+   "ini": 34.16,
+   "fin": 34.38
+  },
+  {
+   "p": "no",
+   "ini": 34.38,
+   "fin": 34.48
+  },
+  {
+   "p": "volvieron?",
+   "ini": 34.48,
+   "fin": 34.82
+  },
+  {
+   "p": "En",
+   "ini": 35.32,
+   "fin": 35.46
+  },
+  {
+   "p": "los",
+   "ini": 35.46,
+   "fin": 35.58
+  },
+  {
+   "p": "motores",
+   "ini": 35.58,
+   "fin": 35.9
+  },
+  {
+   "p": "no",
+   "ini": 35.9,
+   "fin": 36.06
+  },
+  {
+   "p": "faltan",
+   "ini": 36.06,
+   "fin": 36.4
+  },
+  {
+   "p": "agujeros",
+   "ini": 36.4,
+   "fin": 36.8
+  },
+  {
+   "p": "porque",
+   "ini": 36.8,
+   "fin": 37.02
+  },
+  {
+   "p": "no",
+   "ini": 37.02,
+   "fin": 37.2
+  },
+  {
+   "p": "les",
+   "ini": 37.2,
+   "fin": 37.36
+  },
+  {
+   "p": "den.",
+   "ini": 37.36,
+   "fin": 37.54
+  },
+  {
+   "p": "Faltan",
+   "ini": 37.82,
+   "fin": 38.16
+  },
+  {
+   "p": "porque",
+   "ini": 38.16,
+   "fin": 38.36
+  },
+  {
+   "p": "los",
+   "ini": 38.36,
+   "fin": 38.54
+  },
+  {
+   "p": "aviones",
+   "ini": 38.54,
+   "fin": 38.8
+  },
+  {
+   "p": "que",
+   "ini": 38.8,
+   "fin": 39.0
+  },
+  {
+   "p": "recibían",
+   "ini": 39.0,
+   "fin": 39.4
+  },
+  {
+   "p": "ahí",
+   "ini": 39.4,
+   "fin": 39.52
+  },
+  {
+   "p": "el",
+   "ini": 39.52,
+   "fin": 39.62
+  },
+  {
+   "p": "impacto",
+   "ini": 39.62,
+   "fin": 39.88
+  },
+  {
+   "p": "ya",
+   "ini": 39.88,
+   "fin": 40.08
+  },
+  {
+   "p": "no",
+   "ini": 40.08,
+   "fin": 40.18
+  },
+  {
+   "p": "regresaban.",
+   "ini": 40.18,
+   "fin": 40.7
+  },
+  {
+   "p": "Donde",
+   "ini": 41.0,
+   "fin": 41.26
+  },
+  {
+   "p": "no",
+   "ini": 41.26,
+   "fin": 41.4
+  },
+  {
+   "p": "ves",
+   "ini": 41.4,
+   "fin": 41.52
+  },
+  {
+   "p": "agujeros",
+   "ini": 41.52,
+   "fin": 41.94
+  },
+  {
+   "p": "es",
+   "ini": 41.94,
+   "fin": 42.08
+  },
+  {
+   "p": "justo",
+   "ini": 42.08,
+   "fin": 42.3
+  },
+  {
+   "p": "donde",
+   "ini": 42.3,
+   "fin": 42.48
+  },
+  {
+   "p": "un",
+   "ini": 42.48,
+   "fin": 42.64
+  },
+  {
+   "p": "balazo",
+   "ini": 42.64,
+   "fin": 42.92
+  },
+  {
+   "p": "te",
+   "ini": 42.92,
+   "fin": 43.08
+  },
+  {
+   "p": "tumba.",
+   "ini": 43.08,
+   "fin": 43.4
+  },
+  {
+   "p": "Lo",
+   "ini": 43.78,
+   "fin": 43.96
+  },
+  {
+   "p": "dejó",
+   "ini": 43.96,
+   "fin": 44.22
+  },
+  {
+   "p": "por",
+   "ini": 44.22,
+   "fin": 44.34
+  },
+  {
+   "p": "escrito",
+   "ini": 44.34,
+   "fin": 44.6
+  },
+  {
+   "p": "en",
+   "ini": 44.6,
+   "fin": 44.76
+  },
+  {
+   "p": "un",
+   "ini": 44.76,
+   "fin": 44.82
+  },
+  {
+   "p": "informe",
+   "ini": 44.82,
+   "fin": 45.2
+  },
+  {
+   "p": "de",
+   "ini": 45.2,
+   "fin": 45.3
+  },
+  {
+   "p": "ese",
+   "ini": 45.3,
+   "fin": 45.4
+  },
+  {
+   "p": "mismo",
+   "ini": 45.4,
+   "fin": 45.62
+  },
+  {
+   "p": "año:",
+   "ini": 45.62,
+   "fin": 45.86
+  },
+  {
+   "p": "cómo",
+   "ini": 46.12,
+   "fin": 46.28
+  },
+  {
+   "p": "calcular",
+   "ini": 46.28,
+   "fin": 46.68
+  },
+  {
+   "p": "lo",
+   "ini": 46.68,
+   "fin": 46.8
+  },
+  {
+   "p": "vulnerable",
+   "ini": 46.8,
+   "fin": 47.1
+  },
+  {
+   "p": "que",
+   "ini": 47.1,
+   "fin": 47.36
+  },
+  {
+   "p": "es",
+   "ini": 47.36,
+   "fin": 47.46
+  },
+  {
+   "p": "un",
+   "ini": 47.46,
+   "fin": 47.56
+  },
+  {
+   "p": "avión",
+   "ini": 47.56,
+   "fin": 47.74
+  },
+  {
+   "p": "usando",
+   "ini": 47.74,
+   "fin": 47.98
+  },
+  {
+   "p": "solo",
+   "ini": 47.98,
+   "fin": 48.24
+  },
+  {
+   "p": "los",
+   "ini": 48.24,
+   "fin": 48.44
+  },
+  {
+   "p": "que",
+   "ini": 48.44,
+   "fin": 48.54
+  },
+  {
+   "p": "sobreviven.",
+   "ini": 48.54,
+   "fin": 49.1
+  },
+  {
+   "p": "Esto",
+   "ini": 50.32,
+   "fin": 50.76
+  },
+  {
+   "p": "se",
+   "ini": 50.76,
+   "fin": 50.92
+  },
+  {
+   "p": "llama",
+   "ini": 50.92,
+   "fin": 51.1
+  },
+  {
+   "p": "sesgo",
+   "ini": 51.1,
+   "fin": 51.42
+  },
+  {
+   "p": "de",
+   "ini": 51.42,
+   "fin": 51.54
+  },
+  {
+   "p": "supervivencia.",
+   "ini": 51.54,
+   "fin": 52.22
+  },
+  {
+   "p": "Y",
+   "ini": 52.46,
+   "fin": 52.6
+  },
+  {
+   "p": "lo",
+   "ini": 52.6,
+   "fin": 52.7
+  },
+  {
+   "p": "tienes",
+   "ini": 52.7,
+   "fin": 52.88
+  },
+  {
+   "p": "en",
+   "ini": 52.88,
+   "fin": 53.08
+  },
+  {
+   "p": "tu",
+   "ini": 53.08,
+   "fin": 53.14
+  },
+  {
+   "p": "trabajo:",
+   "ini": 53.14,
+   "fin": 53.52
+  },
+  {
+   "p": "cuando",
+   "ini": 53.8,
+   "fin": 53.92
+  },
+  {
+   "p": "analizas",
+   "ini": 53.92,
+   "fin": 54.44
+  },
+  {
+   "p": "solo",
+   "ini": 54.44,
+   "fin": 54.62
+  },
+  {
+   "p": "los",
+   "ini": 54.62,
+   "fin": 54.8
+  },
+  {
+   "p": "clientes",
+   "ini": 54.8,
+   "fin": 55.18
+  },
+  {
+   "p": "que",
+   "ini": 55.18,
+   "fin": 55.28
+  },
+  {
+   "p": "siguen,",
+   "ini": 55.28,
+   "fin": 55.66
+  },
+  {
+   "p": "solo",
+   "ini": 55.88,
+   "fin": 56.08
+  },
+  {
+   "p": "las",
+   "ini": 56.08,
+   "fin": 56.3
+  },
+  {
+   "p": "startups",
+   "ini": 56.3,
+   "fin": 56.58
+  },
+  {
+   "p": "que",
+   "ini": 56.58,
+   "fin": 56.9
+  },
+  {
+   "p": "triunfaron,",
+   "ini": 56.9,
+   "fin": 57.36
+  },
+  {
+   "p": "solo",
+   "ini": 57.36,
+   "fin": 57.84
+  },
+  {
+   "p": "los",
+   "ini": 57.84,
+   "fin": 58.04
+  },
+  {
+   "p": "modelos",
+   "ini": 58.04,
+   "fin": 58.42
+  },
+  {
+   "p": "que",
+   "ini": 58.42,
+   "fin": 58.5
+  },
+  {
+   "p": "llegaron",
+   "ini": 58.5,
+   "fin": 58.82
+  },
+  {
+   "p": "a",
+   "ini": 58.82,
+   "fin": 58.9
+  },
+  {
+   "p": "producción.",
+   "ini": 58.9,
+   "fin": 59.34
+  },
+  {
+   "p": "Antes",
+   "ini": 59.7,
+   "fin": 59.9
+  },
+  {
+   "p": "de",
+   "ini": 59.9,
+   "fin": 60.08
+  },
+  {
+   "p": "sacar",
+   "ini": 60.08,
+   "fin": 60.3
+  },
+  {
+   "p": "conclusiones,",
+   "ini": 60.3,
+   "fin": 61.04
+  },
+  {
+   "p": "pregúntate",
+   "ini": 61.24,
+   "fin": 61.7
+  },
+  {
+   "p": "quién",
+   "ini": 61.7,
+   "fin": 61.86
+  },
+  {
+   "p": "falta",
+   "ini": 61.86,
+   "fin": 62.14
+  },
+  {
+   "p": "en",
+   "ini": 62.14,
+   "fin": 62.28
+  },
+  {
+   "p": "tus",
+   "ini": 62.28,
+   "fin": 62.42
+  },
+  {
+   "p": "datos.",
+   "ini": 62.42,
+   "fin": 62.64
+  },
+  {
+   "p": "Sígueme",
+   "ini": 63.18,
+   "fin": 63.62
+  },
+  {
+   "p": "para",
+   "ini": 63.62,
+   "fin": 63.78
+  },
+  {
+   "p": "más",
+   "ini": 63.78,
+   "fin": 63.94
+  },
+  {
+   "p": "historias",
+   "ini": 63.94,
+   "fin": 64.34
+  },
+  {
+   "p": "de",
+   "ini": 64.34,
+   "fin": 64.44
+  },
+  {
+   "p": "datos.",
+   "ini": 64.44,
+   "fin": 64.66
+  }
+ ],
+ "frases": [
+  {
+   "texto": "Querían blindar los aviones justo donde tenían más balazos.",
+   "ini": 0.0,
+   "fin": 2.44
+  },
+  {
+   "texto": "Y era al revés.",
+   "ini": 2.62,
+   "fin": 3.32
+  },
+  {
+   "texto": "Mil novecientos cuarenta y tres.",
+   "ini": 3.32,
+   "fin": 5.4
+  },
+  {
+   "texto": "Los bombarderos aliados caen a decenas.",
+   "ini": 5.4,
+   "fin": 7.08
+  },
+  {
+   "texto": "Solo el diecisiete de agosto, sesenta no vuelven.",
+   "ini": 7.36,
+   "fin": 9.78
+  },
+  {
+   "texto": "En Nueva York, en la Universidad de Columbia, un grupo de matemáticos trabaja para el ejército.",
+   "ini": 10.28,
+   "fin": 14.82
+  },
+  {
+   "texto": "Uno es Abraham Wald, que había huido de la Austria nazi.",
+   "ini": 15.12,
+   "fin": 17.54
+  },
+  {
+   "texto": "El problema: el blindaje pesa.",
+   "ini": 18.0,
+   "fin": 19.76
+  },
+  {
+   "texto": "No puedes forrar el avión entero.",
+   "ini": 19.98,
+   "fin": 21.24
+  },
+  {
+   "texto": "¿Dónde lo pones?",
+   "ini": 21.54,
+   "fin": 22.12
+  },
+  {
+   "texto": "Los aviones que vuelven traen los agujeros en el fuselaje y en las alas.",
+   "ini": 22.64,
+   "fin": 25.64
+  },
+  {
+   "texto": "En los motores, casi ninguno.",
+   "ini": 25.86,
+   "fin": 27.32
+  },
+  {
+   "texto": "La conclusión parece obvia: refuerza donde están los agujeros.",
+   "ini": 27.76,
+   "fin": 30.68
+  },
+  {
+   "texto": "Wald se hizo otra pregunta: ¿y los aviones que no volvieron?",
+   "ini": 32.22,
+   "fin": 34.82
+  },
+  {
+   "texto": "En los motores no faltan agujeros porque no les den.",
+   "ini": 35.32,
+   "fin": 37.54
+  },
+  {
+   "texto": "Faltan porque los aviones que recibían ahí el impacto ya no regresaban.",
+   "ini": 37.82,
+   "fin": 40.7
+  },
+  {
+   "texto": "Donde no ves agujeros es justo donde un balazo te tumba.",
+   "ini": 41.0,
+   "fin": 43.4
+  },
+  {
+   "texto": "Lo dejó por escrito en un informe de ese mismo año: cómo calcular lo vulnerable que es un avión usando solo los que sobreviven.",
+   "ini": 43.78,
+   "fin": 49.1
+  },
+  {
+   "texto": "Esto se llama sesgo de supervivencia.",
+   "ini": 50.32,
+   "fin": 52.22
+  },
+  {
+   "texto": "Y lo tienes en tu trabajo: cuando analizas solo los clientes que siguen, solo las startups que triunfaron, solo los modelos que llegaron a producción.",
+   "ini": 52.46,
+   "fin": 59.34
+  },
+  {
+   "texto": "Antes de sacar conclusiones, pregúntate quién falta en tus datos.",
+   "ini": 59.7,
+   "fin": 62.64
+  },
+  {
+   "texto": "Sígueme para más historias de datos.",
+   "ini": 63.18,
+   "fin": 64.66
+  }
+ ]
+}

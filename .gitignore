@@ -1,0 +1,28 @@
+# Solo código y textos. Por defecto no entra nada; abajo se permite lo que sí.
+*
+!*/
+!.gitignore
+!*.py
+!*.js
+!*.html
+!*.md
+!*.swift
+!beats*.json
+!voz.tiempos.json
+!package.json
+!package-lock.json
+!publicar.txt
+
+# Entornos y dependencias
+.venv/
+.venv-manim/
+node_modules/
+__pycache__/
+# Material privado: brutos, transcripciones, capturas con sesión, vídeos, renders
+entrevistas/brutos/
+archivo/
+motor/previews/
+promos/*/originales/
+promos/*/shots/
+**/out/
+historias/manim/media/
